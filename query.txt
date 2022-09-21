@@ -1,0 +1,44 @@
+query{
+  getAllPosts {
+    id
+    title
+    description
+  }
+  #  getPost (id:"632adef98c9ee80a007fc068"){
+  #   title
+  #   description
+  # }
+}
+
+# mutation{
+#   createPost(post:{
+#     title:"This is third post"
+#     description:"This is the third description....!!"
+#   }){
+#     id
+#     title
+#     description
+#   }
+# }
+
+# mutation{
+#   deletePost(id:"632adef98c9ee80a007fc068")
+# }
+
+mutation{
+  updatePost(id:"632add9b8c9ee80a007fc063",post: {
+    title:"New First 123"
+  }){
+      id
+      title
+      description
+  }
+}
+
+
+# query{
+#   getPost (id:"632adef98c9ee80a007fc068"){
+#     title
+#     description
+#   }
+# }
